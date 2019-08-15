@@ -46,6 +46,7 @@ def inference(args, model):
         img2 = frame_utils.read_gen(input_image_list[i+1])
 
         # resize to 512
+        # inputs of the net are 256/512/1024...
         img1_in = imresize(img1,(512,512))
         img2_in = imresize(img2,(512,512))
 
@@ -91,7 +92,8 @@ def inference(args, model):
 
 def demo(parser):
     args = parser.parse_args()
-        if args.number_gpus < 0 : args.number_gpus = torch.cuda.device_count()
+    if args.number_gpus < 0 : args.number_gpus = torch.cuda.device_count()
+    tools.add_arguments_for_module(parser, models, argument_for_class='model', default='FlowNet2')
     model = tools.module_to_dict(models)[args.model]
     args.cuda = not args.no_cuda and torch.cuda.is_available()
 
@@ -107,21 +109,21 @@ def demo(parser):
     if not os.path.exists(args.save):
         os.makedirs(args.save)
 
+    stats = inference(args=args, model=model_and_loss)
+    print("Demo test done")
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--crop_size', type=int, nargs='+', default = [512, 512], help="Spatial dimension to crop training samples for training")
     parser.add_argument('--number_gpus', '-ng', type=int, default=-1, help='number of GPUs to use')
     parser.add_argument('--no_cuda', action='store_true')
-    parser.add_argument('--name', default='run', type=str, help='a name to append to the save directory')
     parser.add_argument('--save', '-s', default='./work', type=str, help='directory for saving')
     parser.add_argument('--resume', default='', type=str, metavar='PATH', help='path to latest checkpoint (default: none)')
     parser.add_argument('--input_dir', type=str)
+    parser.add_argument('--model', default='FlowNet2', type=str)
 
     main_dir = os.path.dirname(os.path.realpath(__file__))
     os.chdir(main_dir)
 
-    # main
-    stats = inference(args=args, model=model_and_loss)
-    print("Demo test done")
+    demo(parser)
