@@ -57,8 +57,8 @@ def inference(args, model):
         images = [images]
 
         if args.cuda:
-            data, target = [d.cuda() for d in images], [t.cuda() for t in flow]
-        data, target = [Variable(d) for d in data], [Variable(t) for t in target]
+            data = [d.cuda() for d in images]
+        data = [Variable(d) for d in data]
 
         with torch.no_grad():
             output = model(data[0])

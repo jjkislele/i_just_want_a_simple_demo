@@ -15,7 +15,7 @@ cp ./i_just_want_a_simple_demo_for_flownet2/*.py .
 ```
 
 ### 2. Install custom layers
-flownet2-pytorch supports python3. I recommend anaconda to manage these packages ang virtual envoriments.
+flownet2-pytorch supports python3. I recommend anaconda to manage these packages and virtual envoriments.
 
 It works for me:
 
