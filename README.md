@@ -38,6 +38,10 @@ sh install.sh
 
 ### 3. Download pre-trained model
 
+**Should you use these pre-trained weights, please adhere to the [license agreements](https://drive.google.com/file/d/1TVv0BnNFh3rpHZvD-easMb9jYrPE2Eqd/view?usp=sharing).**
+
+**NEW** [BaiduYun](https://pan.baidu.com/s/12p4IE-xiNi6OHMsDpLBkug) [Fetch Code: ncm4]
+
 * [FlowNet2](https://drive.google.com/file/d/1hF8vS6YeHkx3j2pfCeQqqZGwA_PJq_Da/view?usp=sharing)[620MB]
 * [FlowNet2-C](https://drive.google.com/file/d/1BFT6b7KgKJC8rA59RmOVAXRM_S7aSfKE/view?usp=sharing)[149MB]
 * [FlowNet2-CS](https://drive.google.com/file/d/1iBJ1_o7PloaINpa8m7u_7TsLCX0Dt_jS/view?usp=sharing)[297MB]
@@ -68,11 +72,40 @@ File structure
 └── README.md 	
 ```
 
-For more help, type 
+For more help, please type 
 
 ```bash
 python main.py --help
 ```
+
+### 5. Result
+
+If the demo runs properly, several folders will be created under your workspace:
+
+```
+.
+├── result
+│   └── video
+│         ├── 1.jpg
+│         ├── 2.jpg
+│         └── *.jpg
+├── checkpoints		
+│   └── FlowNet2_checkpoint.pth.tar
+├── demo.py 
+├── flowlib.py  	
+├── README.md
+├── *result 
+│   ├── 1.jpg.flo
+│   ├── 2.jpg.flo
+│   └── *.jpg.flo
+└── *result_img 
+    ├── 1.jpg
+    ├── 2.jpg
+    └── *.jpg
+```
+
+``./result/1.jpg.flo`` is the flow inference between ``1.jpg`` and ``2.jpg``.
+![Predicted flows](./result.png)
 
 ## Acknowledgments
 
