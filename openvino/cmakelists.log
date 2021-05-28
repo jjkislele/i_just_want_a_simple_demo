@@ -1,0 +1,190 @@
+-- The C compiler identification is GNU 4.9.3
+-- The CXX compiler identification is GNU 4.9.3
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- CMAKE_BUILD_TYPE: Release
+-- Detected 64 bit architecture
+-- Inference Engine enabled features: 
+-- 
+--     CI_BUILD_NUMBER: custom_master_45d1b4eb19d1f4eaaef72f7c94af0a30ed062e51
+--     ENABLE_TESTS = OFF
+--     ENABLE_MKL_DNN = ON
+--     ENABLE_CLDNN = OFF
+--     ENABLE_LTO = OFF
+--     OS_FOLDER = OFF
+--     TREAT_WARNING_AS_ERROR = OFF
+--     ENABLE_SANITIZER = OFF
+--     ENABLE_THREAD_SANITIZER = OFF
+--     COVERAGE = OFF
+--     ENABLE_SSE42 = ON
+--     ENABLE_AVX2 = ON
+--     ENABLE_AVX512F = ON
+-- 
+-- Found Wget: /usr/bin/wget  
+-- PROJECT ............................... OpenVINO
+-- CMAKE_BINARY_DIR ...................... /root/data/openvino_gai/openvino/build
+-- OpenVINO_MAIN_SOURCE_DIR .............. /root/data/openvino_gai/openvino
+-- IE_MAIN_SOURCE_DIR .................... /root/data/openvino_gai/openvino/inference-engine
+-- CMAKE_GENERATOR ....................... Unix Makefiles
+-- CMAKE_C_COMPILER_ID ................... GNU
+-- CMAKE_BUILD_TYPE ...................... Release
+-- CMAKE_CXX_FLAGS ....................... -D_GLIBCXX_USE_CXX11_ABI=0  -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong -s -fsigned-char -ffunction-sections -fdata-sections -fdiagnostics-show-option -Wundef -Wuninitialized -Winit-self -Wmaybe-uninitialized
+-- Found Git: /usr/bin/git (found version "2.7.4") 
+-- Current hash 45d1b4eb19d1f4eaaef72f7c94af0a30ed062e51
+-- NGRAPH_VERSION 0.0.0+45d1b4e
+-- NGRAPH_VERSION_SHORT 0.0.0
+-- NGRAPH_WHEEL_VERSION 0.0.0
+-- NGRAPH_API_VERSION 0.0
+-- NGRAPH_ADDRESS_SANITIZER_ENABLE:      OFF
+-- NGRAPH_CODE_COVERAGE_ENABLE:          OFF
+-- NGRAPH_DEBUG_ENABLE:                  OFF
+-- NGRAPH_DEPRECATED_ENABLE:             OFF
+-- NGRAPH_DYNAMIC_COMPONENTS_ENABLE:     ON
+-- NGRAPH_EXPORT_TARGETS_ENABLE:         ON
+-- NGRAPH_IE_ENABLE:                     OFF
+-- NGRAPH_IE_STATIC_LIB_ENABLE:          
+-- NGRAPH_INTERPRETER_ENABLE:            ON
+-- NGRAPH_JSON_ENABLE:                   ON
+-- NGRAPH_LIB_VERSIONING_ENABLE:         OFF
+-- NGRAPH_ONNX_IMPORT_ENABLE:            ON
+-- NGRAPH_PYTHON_BUILD_ENABLE:           OFF
+-- NGRAPH_TEST_UTIL_ENABLE:              OFF
+-- NGRAPH_THREAD_SANITIZER_ENABLE:       OFF
+-- NGRAPH_TOOLS_ENABLE:                  
+-- NGRAPH_UB_SANITIZER_ENABLE:           OFF
+-- NGRAPH_USE_PROTOBUF_LITE:             OFF
+-- NGRAPH_UNIT_TEST_ENABLE:              OFF
+-- NGRAPH_WARNINGS_AS_ERRORS:            OFF
+-- NGRAPH_CXX_STANDARD:                  11
+-- NGRAPH_FORWARD_CMAKE_ARGS -DCMAKE_C_COMPILER=/usr/bin/cc;-DCMAKE_CXX_COMPILER=/usr/bin/c++;-DCMAKE_CXX_STANDARD:STRING=11;-DCMAKE_CXX_STANDARD_REQUIRED:BOOL=ON;-DCMAKE_CXX_EXTENSIONS:BOOL=OFF;-DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=ON;-DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=ON;-DCMAKE_BUILD_TYPE=Release
+-- Installation directory: /usr/local
+-- nGraph using CXX11 ABI: 0
+-- NGRAPH_COMMON_CXX_FLAGS -D_GLIBCXX_USE_CXX11_ABI=0;-Wformat;-Wformat-security;-D_FORTIFY_SOURCE=2;-fstack-protector-strong;-s;-fsigned-char;-ffunction-sections;-fdata-sections;-fdiagnostics-show-option;-Wundef;-Wuninitialized;-Winit-self;-Wmaybe-uninitialized;-Wno-error=maybe-uninitialized;-Wno-error=return-type;-fPIC;-Wno-error=return-type;-Wno-undef;-D_GLIBCXX_USE_CXX11_ABI=0
+-- NGRAPH_COMMON_C_FLAGS -Wformat;-Wformat-security;-D_FORTIFY_SOURCE=2;-fstack-protector-strong;-s;-ffunction-sections;-fdata-sections;-fdiagnostics-show-option;-Wundef;-Wuninitialized;-Winit-self;-Wmaybe-uninitialized;-Wno-error=maybe-uninitialized;-Wno-error=return-type;-fPIC;-Wno-error=return-type;-Wno-undef;-D_GLIBCXX_USE_CXX11_ABI=0
+-- Compile Flags: -D_GLIBCXX_USE_CXX11_ABI=0 -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong -s -fsigned-char -ffunction-sections -fdata-sections -fdiagnostics-show-option -Wundef -Wuninitialized -Winit-self -Wmaybe-uninitialized -Wno-error=maybe-uninitialized -Wno-error=return-type -fPIC -Wno-error=return-type -Wno-undef -D_GLIBCXX_USE_CXX11_ABI=0 -DEIGEN_MPL2_ONLY -DTBB_USE_THREADING_TOOLS -DNGRAPH_DYNAMIC_COMPONENTS_ENABLE
+-- Shared Link Flags:  -Wl,--gc-sections -Wl,--exclude-libs,ALL
+-- CMAKE_CXX_FLAGS_RELEASE -O3 -DNDEBUG
+-- CMAKE_CXX_FLAGS_DEBUG -O0 -g
+-- 
+-- 3.7.1.0
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - yes
+Generated: /root/data/openvino_gai/openvino/build/_deps/ext_onnx-build/onnx/onnx_ngraph_onnx-ml.proto
+Generated: /root/data/openvino_gai/openvino/build/_deps/ext_onnx-build/onnx/onnx-operators_ngraph_onnx-ml.proto
+-- 
+-- ******** Summary ********
+--   CMake version         : 3.16.8
+--   CMake command         : /root/tool/cmake-3.16.8-Linux-x86_64/bin/cmake
+--   System                : Linux
+--   C++ compiler          : /usr/bin/c++
+--   C++ compiler version  : 4.9.3
+--   CXX flags             : -D_GLIBCXX_USE_CXX11_ABI=0 -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong -s -fsigned-char -ffunction-sections -fdata-sections -fdiagnostics-show-option -Wundef -Wuninitialized -Winit-self -Wmaybe-uninitialized -Wno-error=maybe-uninitialized -Wno-error=return-type -fPIC -Wno-error=return-type -Wno-undef -D_GLIBCXX_USE_CXX11_ABI=0 -Wnon-virtual-dtor
+--   Build type            : Release
+--   Compile definitions   : IE_BUILD_POSTFIX="";PROJECT_ROOT_DIR="/root/data/openvino_gai/openvino/ngraph"
+--   CMAKE_PREFIX_PATH     : 
+--   CMAKE_INSTALL_PREFIX  : /usr/local
+--   CMAKE_MODULE_PATH     : /root/data/openvino_gai/openvino/cmake;/root/data/openvino_gai/openvino/cmake/download;/root/data/openvino_gai/openvino/cmake/cross_compile;/root/data/openvino_gai/openvino/ngraph/cmake/Modules/;/root/data/openvino_gai/openvino/cmake/Modules/
+-- 
+--   ONNX version          : 1.6.0
+--   ONNX NAMESPACE        : ngraph_onnx
+--   ONNX_BUILD_TESTS      : OFF
+--   ONNX_BUILD_BENCHMARKS : OFF
+--   ONNX_USE_LITE_PROTO   : OFF
+--   ONNXIFI_DUMMY_BACKEND : OFF
+--   ONNXIFI_ENABLE_EXT    : OFF
+-- 
+--   Protobuf compiler     : 
+--   Protobuf includes     : 
+--   Protobuf libraries    : 
+--   BUILD_ONNX_PYTHON     : OFF
+-- unit tests disabled
+-- Found Python3: /usr/bin/python3 (found version "3.6.10") found components: Interpreter 
+-- INTEL_VTUNE_DIR is not defined
+-- Could NOT find INTEL_ITT (missing: Located_ITT_INCLUDE_DIRS Located_ITT_LIBS) 
+CMake Warning at inference-engine/cmake/check_features_ie.cmake:30 (message):
+  GNA1 is not supported on GCC version 4.9.3.  Fallback to GNA1
+Call Stack (most recent call first):
+  inference-engine/CMakeLists.txt:15 (include)
+
+
+-- Inference Engine enabled features: 
+-- 
+--     CI_BUILD_NUMBER: custom_master_45d1b4eb19d1f4eaaef72f7c94af0a30ed062e51
+--     ENABLE_TESTS = OFF
+--     ENABLE_MKL_DNN = ON
+--     ENABLE_CLDNN = OFF
+--     ENABLE_LTO = OFF
+--     OS_FOLDER = OFF
+--     TREAT_WARNING_AS_ERROR = OFF
+--     ENABLE_SANITIZER = OFF
+--     ENABLE_THREAD_SANITIZER = OFF
+--     COVERAGE = OFF
+--     ENABLE_SSE42 = ON
+--     ENABLE_AVX2 = ON
+--     ENABLE_AVX512F = ON
+--     ENABLE_GNA = ON
+--     ENABLE_CLDNN_TESTS = OFF
+--     ENABLE_PROFILING_ITT = ON
+--     GEMM = JIT
+--     THREADING = TBB
+--     GNA_LIBRARY_VERSION = GNA1
+--     ENABLE_VPU = OFF
+--     ENABLE_MYRIAD = OFF
+--     ENABLE_MYRIAD_NO_BOOT = OFF
+--     ENABLE_GAPI_TESTS = OFF
+--     GAPI_TEST_PERF = OFF
+--     ENABLE_MYRIAD_MVNC_TESTS = OFF
+--     ENABLE_DATA = OFF
+--     ENABLE_SAME_BRANCH_FOR_MODELS = OFF
+--     ENABLE_BEH_TESTS = OFF
+--     ENABLE_FUNCTIONAL_TESTS = OFF
+--     ENABLE_SAMPLES = OFF
+--     ENABLE_SPEECH_DEMO = OFF
+--     ENABLE_FUZZING = OFF
+--     VERBOSE_BUILD = OFF
+--     ENABLE_UNSAFE_LOCATIONS = OFF
+--     ENABLE_ALTERNATIVE_TEMP = ON
+--     ENABLE_OPENCV = ON
+--     ENABLE_PYTHON = OFF
+--     ENABLE_CPPLINT = ON
+--     ENABLE_CPPLINT_REPORT = OFF
+--     ENABLE_CLANG_FORMAT = ON
+--     ENABLE_TBB_RELEASE_ONLY = ON
+-- 
+-- MODELS_PATH=
+-- libGNA::API INTERFACE_LIBRARY : /root/data/openvino_gai/openvino/inference-engine/temp/gna/linux/include
+-- libGNA::KERNEL SHARED_LIBRARY : /root/data/openvino_gai/openvino/inference-engine/temp/gna/linux/lib/libgna_kernel.so
+-- libGNA::OLD_API_LIB SHARED_LIBRARY : /root/data/openvino_gai/openvino/inference-engine/temp/gna/linux/lib/libgna_api.so
+-- Looking for C++ include unistd.h
+-- Looking for C++ include unistd.h - found
+-- Looking for C++ include stdint.h
+-- Looking for C++ include stdint.h - found
+-- Looking for C++ include sys/types.h
+-- Looking for C++ include sys/types.h - found
+-- Looking for C++ include fnmatch.h
+-- Looking for C++ include fnmatch.h - found
+-- Looking for strtoll
+-- Looking for strtoll - found
+-- Register template_plugin to be built in build-plugins/template_plugin
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/data/openvino_gai/openvino/build

@@ -1,0 +1,133 @@
+-- CMAKE_BUILD_TYPE: Release
+-- Detected 64 bit architecture
+-- Inference Engine enabled features: 
+-- 
+--     CI_BUILD_NUMBER: custom_master_71d41a992f022ac36feb838ec8a4f67b88b14160
+--     ENABLE_TESTS = OFF
+--     ENABLE_MKL_DNN = ON
+--     ENABLE_CLDNN = OFF
+--     ENABLE_LTO = OFF
+--     OS_FOLDER = OFF
+--     TREAT_WARNING_AS_ERROR = OFF
+--     ENABLE_SANITIZER = OFF
+--     ENABLE_THREAD_SANITIZER = OFF
+--     COVERAGE = OFF
+--     ENABLE_SSE42 = ON
+--     ENABLE_AVX2 = ON
+--     ENABLE_AVX512F = ON
+-- 
+-- PROJECT ............................... OpenVINO
+-- CMAKE_BINARY_DIR ...................... /root/data/openvino_gai/openvino_cxx03/build
+-- OpenVINO_MAIN_SOURCE_DIR .............. /root/data/openvino_gai/openvino_cxx03
+-- IE_MAIN_SOURCE_DIR .................... /root/data/openvino_gai/openvino_cxx03/inference-engine
+-- CMAKE_GENERATOR ....................... Unix Makefiles
+-- CMAKE_C_COMPILER_ID ................... GNU
+-- CMAKE_BUILD_TYPE ...................... Release
+-- Current hash 71d41a992f022ac36feb838ec8a4f67b88b14160
+-- NGRAPH_VERSION 0.0.0+71d41a9
+-- NGRAPH_VERSION_SHORT 0.0.0
+-- NGRAPH_WHEEL_VERSION 0.0.0
+-- NGRAPH_API_VERSION 0.0
+-- NGRAPH_ADDRESS_SANITIZER_ENABLE:      OFF
+-- NGRAPH_CODE_COVERAGE_ENABLE:          OFF
+-- NGRAPH_DEBUG_ENABLE:                  OFF
+-- NGRAPH_DEPRECATED_ENABLE:             OFF
+-- NGRAPH_DYNAMIC_COMPONENTS_ENABLE:     ON
+-- NGRAPH_EXPORT_TARGETS_ENABLE:         ON
+-- NGRAPH_IE_ENABLE:                     OFF
+-- NGRAPH_IE_STATIC_LIB_ENABLE:          
+-- NGRAPH_INTERPRETER_ENABLE:            ON
+-- NGRAPH_JSON_ENABLE:                   ON
+-- NGRAPH_LIB_VERSIONING_ENABLE:         OFF
+-- NGRAPH_ONNX_IMPORT_ENABLE:            ON
+-- NGRAPH_PYTHON_BUILD_ENABLE:           OFF
+-- NGRAPH_TEST_UTIL_ENABLE:              OFF
+-- NGRAPH_THREAD_SANITIZER_ENABLE:       OFF
+-- NGRAPH_TOOLS_ENABLE:                  
+-- NGRAPH_UB_SANITIZER_ENABLE:           OFF
+-- NGRAPH_UNIT_TEST_ENABLE:              OFF
+-- NGRAPH_WARNINGS_AS_ERRORS:            OFF
+-- NGRAPH_CXX_STANDARD:                  11
+-- NGRAPH_FORWARD_CMAKE_ARGS -DCMAKE_C_COMPILER=/usr/bin/cc;-DCMAKE_CXX_COMPILER=/usr/bin/c++;-DCMAKE_CXX_STANDARD:STRING=11;-DCMAKE_CXX_STANDARD_REQUIRED:BOOL=ON;-DCMAKE_CXX_EXTENSIONS:BOOL=OFF;-DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=ON;-DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=ON;-DCMAKE_BUILD_TYPE=Release
+-- Installation directory: /usr/local
+-- NGRAPH_COMMON_CXX_FLAGS -Wformat;-Wformat-security;-D_FORTIFY_SOURCE=2;-fstack-protector-strong;-s;-fsigned-char;-ffunction-sections;-fdata-sections;-fdiagnostics-show-option;-Wundef;-Wuninitialized;-Winit-self;-Wmaybe-uninitialized;-Wno-error=maybe-uninitialized;-Wno-error=return-type;-fPIC;-Wno-error=return-type;-Wno-undef
+-- NGRAPH_COMMON_C_FLAGS -Wformat;-Wformat-security;-D_FORTIFY_SOURCE=2;-fstack-protector-strong;-s;-ffunction-sections;-fdata-sections;-fdiagnostics-show-option;-Wundef;-Wuninitialized;-Winit-self;-Wmaybe-uninitialized;-Wno-error=maybe-uninitialized;-Wno-error=return-type;-fPIC;-Wno-error=return-type;-Wno-undef
+-- Compile Flags: -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong -s -fsigned-char -ffunction-sections -fdata-sections -fdiagnostics-show-option -Wundef -Wuninitialized -Winit-self -Wmaybe-uninitialized -Wno-error=maybe-uninitialized -Wno-error=return-type -fPIC -Wno-error=return-type -Wno-undef -DEIGEN_MPL2_ONLY -DTBB_USE_THREADING_TOOLS -DNGRAPH_DYNAMIC_COMPONENTS_ENABLE
+-- Shared Link Flags:  -Wl,--gc-sections -Wl,--exclude-libs,ALL
+-- CMAKE_CXX_FLAGS_RELEASE -O3 -DNDEBUG
+-- CMAKE_CXX_FLAGS_DEBUG -O0 -g
+-- 
+-- ******** Summary ********
+--   CMake version         : 3.16.8
+--   CMake command         : /root/tool/cmake-3.16.8-Linux-x86_64/bin/cmake
+--   System                : Linux
+--   C++ compiler          : /usr/bin/c++
+--   C++ compiler version  : 5.4.0
+--   CXX flags             : -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong -s -fsigned-char -ffunction-sections -fdata-sections -fdiagnostics-show-option -Wundef -Wuninitialized -Winit-self -Wmaybe-uninitialized -Wno-error=maybe-uninitialized -Wno-error=return-type -fPIC -Wno-error=return-type -Wno-undef -Wnon-virtual-dtor
+--   Build type            : Release
+--   Compile definitions   : IE_BUILD_POSTFIX="";PROJECT_ROOT_DIR="/root/data/openvino_gai/openvino_cxx03/ngraph";ONNX_BUILD_SHARED_LIBS=ON;ONNX_NAMESPACE=ngraph_onnx
+--   CMAKE_PREFIX_PATH     : 
+--   CMAKE_INSTALL_PREFIX  : /usr/local
+--   CMAKE_MODULE_PATH     : /root/data/openvino_gai/openvino_cxx03/cmake;/root/data/openvino_gai/openvino_cxx03/cmake/download;/root/data/openvino_gai/openvino_cxx03/cmake/cross_compile;/root/data/openvino_gai/openvino_cxx03/ngraph/cmake/Modules/;/root/data/openvino_gai/openvino_cxx03/cmake/Modules/
+-- 
+--   ONNX version          : 1.6.0
+--   ONNX NAMESPACE        : ngraph_onnx
+--   ONNX_BUILD_TESTS      : OFF
+--   ONNX_BUILD_BENCHMARKS : OFF
+--   ONNX_USE_LITE_PROTO   : OFF
+--   ONNXIFI_DUMMY_BACKEND : OFF
+--   ONNXIFI_ENABLE_EXT    : OFF
+-- 
+--   Protobuf compiler     : 
+--   Protobuf includes     : 
+--   Protobuf libraries    : 
+--   BUILD_ONNX_PYTHON     : OFF
+-- unit tests disabled
+-- Inference Engine enabled features: 
+-- 
+--     CI_BUILD_NUMBER: custom_master_71d41a992f022ac36feb838ec8a4f67b88b14160
+--     ENABLE_TESTS = OFF
+--     ENABLE_MKL_DNN = ON
+--     ENABLE_CLDNN = OFF
+--     ENABLE_LTO = OFF
+--     OS_FOLDER = OFF
+--     TREAT_WARNING_AS_ERROR = OFF
+--     ENABLE_SANITIZER = OFF
+--     ENABLE_THREAD_SANITIZER = OFF
+--     COVERAGE = OFF
+--     ENABLE_SSE42 = ON
+--     ENABLE_AVX2 = ON
+--     ENABLE_AVX512F = ON
+--     ENABLE_GNA = OFF
+--     ENABLE_CLDNN_TESTS = OFF
+--     ENABLE_PROFILING_ITT = OFF
+--     GEMM = JIT
+--     THREADING = TBB
+--     ENABLE_VPU = ON
+--     ENABLE_MYRIAD = ON
+--     ENABLE_MYRIAD_NO_BOOT = OFF
+--     ENABLE_GAPI_TESTS = OFF
+--     GAPI_TEST_PERF = OFF
+--     ENABLE_MYRIAD_MVNC_TESTS = OFF
+--     ENABLE_DATA = OFF
+--     ENABLE_SAME_BRANCH_FOR_MODELS = OFF
+--     ENABLE_BEH_TESTS = OFF
+--     ENABLE_FUNCTIONAL_TESTS = OFF
+--     ENABLE_SAMPLES = OFF
+--     ENABLE_SPEECH_DEMO = ON
+--     ENABLE_FUZZING = OFF
+--     VERBOSE_BUILD = OFF
+--     ENABLE_UNSAFE_LOCATIONS = OFF
+--     ENABLE_ALTERNATIVE_TEMP = ON
+--     ENABLE_OPENCV = ON
+--     ENABLE_PYTHON = OFF
+--     ENABLE_CPPLINT = ON
+--     ENABLE_CPPLINT_REPORT = OFF
+--     ENABLE_CLANG_FORMAT = ON
+--     ENABLE_TBB_RELEASE_ONLY = ON
+-- 
+-- MODELS_PATH=
+-- Register template_plugin to be built in build-plugins/template_plugin
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/data/openvino_gai/openvino_cxx03/build
